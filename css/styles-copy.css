@@ -25,8 +25,6 @@ ul {
 
 img {
     display:block;
-    max-width: 100%;
-    height:100%;
 }
 
 /* --------------------- */
@@ -61,19 +59,16 @@ body {
 }
 
 .container {
-    /* max-width: 1158px; */
-    max-width: 320px; 
-    padding-left: 16px;
-    padding-right: 16px;
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .section {
-    /* padding-top: 120px;
-    padding-bottom: 120px; */
-     padding-top: 96px;
-    padding-bottom: 96px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .visually-hidden {
@@ -227,38 +222,27 @@ body {
 /* -----feature------ */
 .feature-list .item-text {
     line-height: calc(24/16); 
-    font-weight: 500;
-    letter-spacing: 0.02em;  
-
+    letter-spacing: 0.02em;
 }
 
 .feature-list {
     display:flex;
     flex-direction: row;
-    /* gap: 24px; */
-    gap:72px;
+    gap: 24px;
+    
     flex-wrap: wrap;
 }
 
 .feature-list-item {
-    /* flex-basis: calc((100% - 72px) / 4); */
-    width:100%;
-    height:100%;
+    flex-basis: calc((100% - 72px) / 4);
 }
 .feature-list-item .item-title {
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.11; /* 111.111% */
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
     margin-bottom: 8px;
 }
 
 .feature-icon-wrapper {
     margin-bottom: 8px;
-    /* display: flex; */
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 112px;
@@ -268,15 +252,8 @@ body {
 }
 
 
-
-
 /* ------------------- */
 /* ----- team--------- */
-
-.container-team {
-    padding-left: 28px;
-    padding-right: 28px;
-}
 
 .team {
     background-color: #F4F4FD;
@@ -294,15 +271,13 @@ body {
 
 .team-list {
     display: flex;
-    /* gap: 24px; */
-    gap:72px;
+    gap: 24px;
+
     flex-wrap: wrap;
 }
 
 .team-list .list-item {
-    /* flex-basis: calc((100% - 72px) / 4);   */
-    width:100%;
-    height:100%;
+    flex-basis: calc((100% - 72px) / 4);  
 }
 
 .team-list .item-title,
@@ -370,18 +345,15 @@ body {
 
 /* ---------------------- */
  /* -----portfolio------ */
-
 .portfolio-list {
     display:flex;
     flex-wrap: wrap;
-    /* row-gap: 48px;
-    column-gap: 24px; */
-    gap:48px;
+    row-gap: 48px;
+    column-gap: 24px;
 }
 
 .portfolio-list-item {
-    /* flex-basis: calc((100% - 48px) / 3); */
-    width:100%;
+    flex-basis: calc((100% - 48px) / 3);
     background: #FFF;
     transition-property: box-shadow;
     transition-duration: 250ms;
@@ -810,88 +782,3 @@ body {
 }
 
 
-@media screen and (min-width: 768px) {
-    
-    /* -------general-------------*/
-    .container {
-        max-width: 768px; 
-    }
-
-    /* --------portfolio--------- */
-    .portfolio-list {
-        row-gap: 72px;
-        column-gap: 24px;
-    }
-    .portfolio-list-item {
-        flex-basis: calc((100% - 48px) / 2); 
-    }
-
-    /* ------------team--------------- */
-
-    .container-team {
-        padding-left: 108px;
-        padding-right: 108px;
-    }
-
-    .team-list {
-        row-gap: 64px;
-        column-gap: 24px;   
-    }
-
-    .team-list .list-item {
-        flex-basis: calc((100% - 24px) / 2);  
-    }
-
-    /* -----feature------- */
-
-    .feature-list-item .item-title {
-        text-align: left;
-        
-    }
-    .feature-list {
-        column-gap: 24px;
-        row-gap: 72px;
-        flex-wrap: wrap;
-    }
-
-    .feature-list-item {
-        flex-basis: calc((100% - 24px) / 2);
-       
-    }
-}
-
-@media screen and (min-width: 1158px) {
-
-    /* -----general--------- */
-    .container {
-        max-width: 1158px; 
-    }
-    .section {
-        padding-top: 120px;
-        padding-bottom: 120px;
-    }
-
-    /* -------portfolio-------- */
-    .portfolio-list {
-        row-gap: 48px;
-        column-gap: 24px;
-    }
-    .portfolio-list-item {
-       flex-basis: calc((100% - 48px) / 3); 
-    }
-
-    /* ---------team---------- */
-
-    .container-team {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    .team-list {
-        gap: 24px;   
-    }
-
-    .team-list .list-item {
-        flex-basis: calc((100% - 72px) / 4);  
-    }
-}
